@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Idea</title>
+    <style>
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: none; /* Prevent resizing */
+            border: 2px solid #333;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Submit Your Idea</h2>
+
+<!-- Form to submit text to save to a file -->
+<form action="/php/save_idea.php" method="POST">
+    <textarea name="idea" placeholder="Write your idea here..." required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
